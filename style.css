@@ -10,7 +10,7 @@ body {
   --clr-txt-g: hsl(217, 19%, 35%);
 }
 main {
-  background: aliceblue;
+  background: lightgray;
   padding: 1.5rem;
   min-width: 375px;
 }
@@ -21,6 +21,7 @@ p {
   border-radius: 12px;
   margin-block: 1.5rem;
   padding: 5% 10%;
+  box-shadow: 2px 4px 4px var(--clr-txt-g);
 }
 .white {
   background: var(--clr-txt-w);
@@ -38,4 +39,63 @@ p {
 .walt {
   background: var(--clr-txt-g);
   color: white;
+}
+.pic {
+  border-radius: 50%;
+  width: 30px;
+}
+.john {
+  border: 2px solid #a775f1;
+}
+#cliff {
+  border: 2px solid #a775f1;
+}
+.header {
+  display: flex;
+  gap: 5%;
+}
+.name {
+  font-weight: 600;
+}
+.veri {
+  opacity: 50%;
+}
+.fat {
+  font-size: 150%;
+  font-weight: 600;
+  margin-block: 5%;
+}
+.thin {
+  opacity: 75%;
+}
+@media screen and (min-width: 786px) {
+  body {
+    margin: auto;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    padding-top: 5%;
+  }
+  body > * {
+    width: min(1200px, 100%);
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    border-radius: 12px;
+  }
+  .cliff {
+    grid-column: span 2;
+  }
+  .kira {
+    grid-row: span 2;
+  }
+  .pat {
+    grid-column: span 2;
+  }
+  .card {
+    margin: 0;
+  }
 }
